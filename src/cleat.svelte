@@ -9,16 +9,6 @@
     </script>
 
 <style>
-<<<<<<< HEAD
-
-</style>
-<div class="container">
-    <!-- <div class="has-background-danger"> -->
-        <div class="columns is-vcentered">
-            <div class="column is-one-third">
-                <div class="tile">
-                    <article class="tile is-child notification  is-danger">
-=======
 .notification {
     background-color: transparent;
     border-radius: 4px;
@@ -33,7 +23,6 @@
             <div class="column is-two-fifths">
                 <div class="tile">
                     <article class="tile is-child notification has-text-white">
->>>>>>> edge
                         <p class="title">Nanotechnology</p>
                         <p> Nanotechnology is an exciting new field in materials science. This field deals with things on the nanoscale which is anything from 1 to 100 nanometers. Scientists and engineers are using nanomaterials to enhance properties like increased strength and lighter weight. This could potentially be applied to athletic equipment, clothing, and footwear to enhance its performance.</p>
                         <p class="is-italic is-size-4 my-4"> A sheet of newspaper is about 100,000 nanometers thick.</p>
@@ -42,11 +31,7 @@
                     </article>
                     </div>
             </div>
-<<<<<<< HEAD
-            <div class="column is-two-third">
-=======
             <div class="column is-three-fifths">
->>>>>>> edge
                 <canvas bind:this={el}></canvas>
             </div>
         </div>

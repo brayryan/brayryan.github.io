@@ -15,11 +15,6 @@
 <script>
 import Navbar from './Navbar.svelte'
 import Home from './home.svelte'
-<<<<<<< HEAD
-import Sneaker from './sneaker.svelte';
-import Tshirt from './tshirt.svelte';
-import Cleat from './cleat.svelte';
-=======
 import Resume from './resume.svelte'
 import Sneaker from './sneaker.svelte';
 import Tshirt from './tshirt.svelte';
@@ -52,17 +47,10 @@ import Particles from "svelte-particles";
     // you can use particlesContainer to call all the Container class
     // (from the core library) methods like play, pause, refresh, start, stop
   };
->>>>>>> edge
 
 </script>
 
 <style>
-<<<<<<< HEAD
-
-</style>
-
-<section class="hero is-info is-large">
-=======
 /* #particle-container {
   position: absolute;
   width: 100%;
@@ -113,26 +101,10 @@ p1 {
 
 
 <section class="hero is-black is-fullheight">
->>>>>>> edge
   <div class="hero-head">
     <nav class="navbar">
       <div class="container">
         <div class="navbar-brand">
-<<<<<<< HEAD
-          <span class="is-family-monospace">RYAN BRAY</span>
-        </div>
-        <div id="navbarMenuHeroB" class="navbar-menu">
-          <div class="navbar-end">
-            <span class="navbar-item is-active">
-              Home
-            </span>
-            <span class="navbar-item is-active">
-              About
-            </span>
-
-            <span class="navbar-item">
-              <a class="button is-info is-inverted">
-=======
           <p1>
             Ryan Bray
           </p1>
@@ -148,7 +120,6 @@ p1 {
 
             <span class="navbar-item">
               <a href="build/images/Bray_Ryan_Resume_15-Nov-2020.pdf" target="_blank" class="button is-info is-inverted">
->>>>>>> edge
                 <span class="icon">
                   <i class="fab fa-github"></i>
                 </span>
@@ -163,31 +134,17 @@ p1 {
 
   <div class="hero-body">
     <div class="container has-text-centered">
-<<<<<<< HEAD
-      <p class="title">
-        The Future of the Shoe
-      </p>
-      <p class="subtitle">
-        Material Science
-=======
       <p class="is-size-1">
         Material Technologies of the Future
       </p>
       <p class="subtitle">
         The latest innovation in athletics, fashion, and footwear
->>>>>>> edge
       </p>
     </div>
   </div>
 
 </section>
 
-<<<<<<< HEAD
-
-  <Sneaker/>
-  <Tshirt/>
-  <Cleat/>
-=======
 <div class="background4">
   <p>&nbsp;</p>
   <p>&nbsp;</p>
@@ -209,7 +166,6 @@ p1 {
 </div>
 
   
->>>>>>> edge
 
 <svelte:head>
 	<link
@@ -223,8 +179,4 @@ p1 {
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
   />
   
-<<<<<<< HEAD
-</svelte:head>
-=======
 </svelte:head> 
->>>>>>> edge
