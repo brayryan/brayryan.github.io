@@ -7,12 +7,13 @@ const loader = new GLTFLoader();
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 100);
-camera.position.z = -5;
 
-const light = new THREE.AmbientLight(0xffffff, 1); // soft white light
+camera.position.z =  7.5;
+
+const light = new THREE.AmbientLight(0xffffff, 3); // soft white light
 
 scene.add(light);
-scene.background = new THREE.Color(0xffffff);
+// scene.background = new THREE.Color(0xf5f5f5);
 
 // cleat 
 // loader.load('assets/models/scene.gltf', function (object) {
@@ -41,16 +42,33 @@ scene.background = new THREE.Color(0xffffff);
 
 
 function animate() {
+<<<<<<< HEAD
   renderer.render(scene, camera);
   requestAnimationFrame(animate);
+=======
+  requestAnimationFrame(animate);
+  scene.rotation.y += 0.01;
+  renderer.render(scene, camera);
+  
+>>>>>>> edge
 }
 
 
 async function loadtshirt() {
+<<<<<<< HEAD
   loader.load('assets/models/t-shirt/scene.gltf', function (tshirt) {
     tshirt.scene.position.set(0,0,-10);
     tshirt.scene.scale.set(4,4,4);
     scene.add(tshirt.scene);
+=======
+  loader.load('assets/models/t-shirt 2/scene.gltf', function (tshirt) {
+    // tshirt.scene.position.set(0,0,-10);
+    tshirt.scene.scale.set(2.2,2.2,2.2);
+    tshirt.scene.position.set(0,-12,0);
+    // tshirt.scene.scale.set(0,0,0);
+    scene.add(tshirt.scene);
+    resize( );
+>>>>>>> edge
   
   }, undefined, 
     function (error) {
@@ -60,9 +78,14 @@ async function loadtshirt() {
 }
 
 
+<<<<<<< HEAD
 
 const resize = (width, height) => {
   var elWidth = width * .66;
+=======
+const resize = () => {
+  var elWidth = renderer.domElement.parentElement.offsetWidth;
+>>>>>>> edge
   var elHeight = elWidth / 2;
   renderer.setSize(elWidth, elHeight)
   camera.aspect = elWidth / elHeight;
@@ -71,8 +94,17 @@ const resize = (width, height) => {
 
 
 export const createScene = (el) => {
+<<<<<<< HEAD
   renderer = new THREE.WebGLRenderer({ antialias: true, canvas: el });
   resize(window.innerWidth, window.innerHeight );
   loadtshirt().then(animate());
 }
 // window.addEventListener('resize', resize);
+=======
+  renderer = new THREE.WebGLRenderer({ antialias: true, canvas: el, alpha: true});
+  loadtshirt().then(animate());
+  let controls = new OrbitControls(camera, renderer.domElement);
+  controls.addEventListener('change', renderer);
+}
+window.addEventListener('resize', resize);
+>>>>>>> edge

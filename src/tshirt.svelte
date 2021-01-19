@@ -9,17 +9,23 @@
     </script>
 
 <style>
-
+.notification {
+    background-color: transparent;
+    border-radius: 4px;
+    position: relative;
+    padding: 1.25rem 2.5rem 1.25rem 1.5rem;
+}
 </style>
 <div class="container">
     <!-- <div class="has-background-danger"> -->
         <div class="columns is-vcentered">
-            <div class="column is-two-third">
+
+            <div class="column is-three-fifths">
                 <canvas bind:this={el}></canvas>
             </div>
-            <div class="column is-one-third">
+            <div class="column is-two-fifths">
                 <div class="tile">
-                    <article class="tile is-child notification  is-warning">
+                    <article class="tile is-child notification has-text-white">
                         <div class="content">
                             <p class="title">E-Textiles and Smart Textiles</p>
                             <p>Some of the more recent innovations in the material industry are combining electronics and textiles. Conductive materials are manufactured into the fibers that can be used to transmit data. This combination could create unique abilities like collection of biometric and external data.</p>
