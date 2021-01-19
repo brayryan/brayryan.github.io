@@ -18,10 +18,7 @@
   },
   "dependencies": {
     "sirv-cli": "^1.0.0",
-<<<<<<< HEAD
-=======
     "svelte-particles": "^1.1.11",
->>>>>>> edge
     "three": "^0.124.0"
   }
 }
